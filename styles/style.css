@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Carme&amp;family=Martel:wght@600&amp;family=Passion+One:wght@400;700&amp;display=swap");
+
+:root {
+  --primary: #b85ee6;
+  --secondary: #999999;
+  --background: #111827;
+  --bg-light: #1f2937;
+  --text: #ffffff;
+  --skill-box: 170px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Martel", serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Passion One", cursive;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Passion One", cursive;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: "Carme", sans-serif;
+  font-size: 1.5rem;
+}
+
+.color {
+  color: var(--primary);
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--background);
+}
+
+.logo {
+  font-size: 1rem;
+}
+
+header .button {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+header .button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Base Styles for button, round button, and section */
+.button {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 18px;
+  background-color: var(--primary);
+  color: var(--background);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  font-family: "Carme", sans-serif;
+}
+
+.button2 {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 18px;
+  background-color: var(--background);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  font-family: "Carme", sans-serif;
+}
+
+.button-round {
+  width: 70px;
+  height: 70px;
+  padding: 18px;
+  background-color: var(--primary);
+  color: var(--background);
+  border-radius: 100%;
+  font-family: "Carme", sans-serif;
+}
+
+.button-round img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button:hover,
+.button2:hover,
+.button-round:hover {
+  opacity: 0.8;
+}
+
+section {
+  padding: 60px 30px 30px;
+}
+
+/* Intro Section Styles */
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+.text h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.btn-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#intro img,
+#about img {
+  flex: none;
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid var(--primary);
+  padding: 10px;
+}
+
+/* Skills Section Styles */
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+#sgrid {
+  display: grid;
+  grid-template-columns: repeat(4, var(--skill-box));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+#sgrid .box {
+  width: var(--skill-box);
+  height: var(--skill-box);
+  padding: 5px;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+#sgrid .box img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* Project Section Styles */
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.p-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.p-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--bg-light);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.p-image {
+  flex: none;
+  width: 300px;
+  height: 300px;
+}
+
+.p-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.p-info {
+  flex: 1;
+  max-width: 500px;
+}
+
+.p-info h3 {
+  color: var(--primary);
+  margin: 10px 0;
+}
+
+.p-info p {
+  line-height: 32px;
+}
+
+.p-item:nth-child(even) {
+  text-align: right;
+}
+
+/* Contact Section Styles */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.c-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+/* About Section styles */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+#about img {
+  width: 210px;
+  height: 210px;
+}
+
+#about .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: var(--bg-light);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+/* Media Query for small screens */
+@media (max-width: 640px) {
+  #intro {
+    flex-direction: column-reverse;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #sgrid {
+    grid-template-columns: repeat(2, var(--skill-box));
+    gap: 10px;
+  }
+
+  .p-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-image {
+    width: 100%;
+  }
+
+  .p-info {
+    text-align: center;
+  }
+
+  .p-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .c-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 800px) {
+  #sgrid {
+    grid-template-columns: repeat(3, var(--skill-box));
+    gap: 10px;
+  }
+
+  .p-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-image {
+    width: 100%;
+  }
+
+  .p-info {
+    text-align: center;
+  }
+
+  .p-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .c-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
